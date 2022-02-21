@@ -10,77 +10,90 @@
 </head>
 <body>
   <header>
-    <div id="logo">
-      <img src="img/logo.jpg">
+    <div class="upper-wrapper">
+      <div id="logo">
+        <img src="img/logo.jpg">
+      </div>
+      <span>Company Name</span>
+      <a href="#examples" class="push">Examples</a>
+      <a href="#testimonial">Testimonial</a>
+      <a href="#signup">Sign up</a>
     </div>
-    <a href="#examples" class="push">Examples</a>
-    <a href="#testimonial">Testimonial</a>
-    <a href="#signup">Sign up</a>
   </header>
   <main>
     <div id="intro">
-      <div>
-        <p class="intro-title">
-          This Is A Landing Page!
-        </p>
-        <p class="intro-desc">
-          We have multiple sections on this page.
-        </p>
-        <a href="signup">Sign up</a>
-      </div>
-      <div id="intro-img">
-        <img src="img/mountain.jpg">
+      <div class="upper-wrapper">
+        <div>
+          <p class="intro-title">
+            This Is A Landing Page!
+          </p>
+          <p class="intro-desc">
+            We have multiple sections on this page. This paragraph needs more content. It needs a lot of text because the font size is smaller.
+          </p>
+          <a href="#signup">Sign up</a>
+        </div>
+        <div id="intro-img">
+          <img src="img/mountain.jpg">
+        </div>
       </div>
     </div>
     <div id="examples">
-      <p class="example-title">
-        Images of different services go here.
-      </p>
-      <div class="card-wrapper">
-        <div class="card">
-          <div>
-            <img src="img/moon.jpg">
+      <div class="lower-wrapper">
+        <p class="example-title">
+          Images of different services go here.
+        </p>
+        <div class="card-wrapper">
+          <div class="card">
+            <div>
+              <img src="img/moon.jpg">
+            </div>
+            <p>Look, it's the mooon!</p>
           </div>
-          <p>Look, it's the mooon!</p>
-        </div>
-        <div class="card">
-          <div>
-            <img src="img/corner.jpg">
+          <div class="card">
+            <div>
+              <img src="img/corner.jpg">
+            </div>
+            <p>Peer into a colourful corner.</p>
           </div>
-          <p>Peer into a colourful corner.</p>
-        </div>
-        <div class="card">
-          <div>
-            <img src="img/pineapple.jpg">
+          <div class="card">
+            <div>
+              <img src="img/pineapple.jpg">
+            </div>
+            <p>Eat some Pineapple.</p>
           </div>
-          <p>Eat some Pineapple.</p>
-        </div>
-        <div class="card">
-          <div>
-            <img src="img/tree.jpg">
+          <div class="card">
+            <div>
+              <img src="img/tree.jpg">
+            </div>
+            <p>That is a unique shape for a tree!</p>
           </div>
-          <p>That is a unique shape for a tree!</p>
-        </div>
+      </div>
       </div>
     </div>
     <div id="testimonial">
-      <p class="testimonial-text">
-        This page has no redeeming qualities. This quote also needs to be long enough to take up multiple lines.
-      </p>
-      <p class="testimonial-text">
-        -Me, the page's creator
-      </p>
+      <div class="lower-wrapper">
+        <p class="testimonial-text">
+          This page has no redeeming qualities. This quote also needs to be long enough to take up multiple lines.
+        </p>
+        <p class="testimonial-owner">
+          -Me, the page's creator
+        </p>
+      </div>
     </div>
     <div id="signup">
-      <div class="signup-wrapper">      
-        <p class="signup-title">Hey! It's a button!</p>
-        <p class="signup-desc">Click the button and nothing happens</p>
+      <div class="lower-wrapper">
+        <div class="signup-info">
+          <p class="signup-title">Hey! It's a button!</p>
+          <p class="signup-desc">Click the button and nothing happens</p>
+        </div>
+        <button>Sign up</button>
       </div>
-      <button>Sign up</button>
     </div>
   </main>
   <footer>
-    <p>There is no Copyright Info</p>
+    <div class="lower-wrapper">
+      <p>There is no Copyright Info</p>
+    </div>
   </footer>
 </body>
 </html>
