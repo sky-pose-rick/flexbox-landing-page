@@ -1,10 +1,10 @@
 .upper-wrapper{
-  width: 800px;
+  width: clamp(600px, 75vw, 1200px);
   margin: auto;
 }
 
 .lower-wrapper{
-  width: 600px;
+  width: clamp(500px, 60vw, 900px);
   margin: auto;
 }
 
@@ -13,11 +13,33 @@ body{
   flex-direction: column;
   font-family: sans-serif;
   font-size: 18px;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
 }
 
 header, #intro, footer{
   background-color: #1f2937;
   color: #f9faf8;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+}
+
+#intro, #examples, #testimonial {
+	flex: 1;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.intro-desc {
+	margin: 10px 0px;
 }
 
 .intro-desc, header a {
@@ -31,25 +53,45 @@ header, #intro, footer{
 	font-weight: bold;
 }
 
+.intro-left {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+header {
+	padding: 10px 0;
+}
+
 header .upper-wrapper {
 	display: flex;
-  align-items: center;
+	align-items: center;
+	gap: 15px;
 }
 
 #intro .upper-wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-#intro img{
-  width: 200px;
+#intro-img {
+	width: 400px;
+	flex: 1;
 }
 
-#intro a, #signup button{
-  background-color: #3882f6;
-	border: 1px solid #e5e7eb;
-  color: #e5e7eb;
-  text-decoration-line: none;
+#intro img {
+	width: 100%;
+}
+
+#intro a, #signup button {
+	background-color: #3882f6;
+	color: #e5e7eb;
+	text-decoration-line: none;
+	width: max-content;
+	padding: 5px 30px;
+	border-radius: 5px;
+	font-weight: bold;
 }
 
 #testimonial {
@@ -57,9 +99,16 @@ header .upper-wrapper {
   background-color: #e5e7eb;
 }
 
-#signup {
+#signup .upper-wrapper {
 	background-color: #3882f6;
 	color: #e5e7eb;
+	margin: 50px 0;
+	padding: 40px 0;
+	border-radius: 10px;
+}
+
+footer {
+	padding: 20px 0;
 }
 
 .testimonial-text {
@@ -93,15 +142,29 @@ header img {
 	text-align: center;
 	font-size: 36px;
 	font-weight: bold;
+	margin-bottom: 30px;
 }
 
 .card-wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+}
+
+.card {
+	width: min-content;
 }
 
 .card img {
-  width: 100px;
+  width: 100%;
+}
+
+.card div {
+	border: 5px solid #3882f6;
+	width: clamp(100px,10vw, 175px);
+	height: clamp(100px,10vw, 175px);
+	overflow: clip;
+	border-radius: 10px;
+	box-sizing: border-box;
 }
 
 .signup-wrapper {
@@ -110,4 +173,13 @@ header img {
 
 #signup button {
 	align-self: center;
+  border: 2px solid #e5e7eb;
+}
+
+.signup-title {
+	font-weight: bold;
+}
+
+.card p {
+	text-align: center;
 }
